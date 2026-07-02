@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zafora Leaf Atelier · Contact</title>
+  <!-- unique, premium, content-first blog design -->
+  <style>
+    /* ----- reset & base ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f7f4ef;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #1e2b2c;
+      line-height: 1.7;
+      padding: 0 1.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: #2b5e4a;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #173e30;
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.25rem;
+    }
+
+    /* ----- typography ----- */
+    h1, h2, h3, h4 {
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #1a3028;
+    }
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      letter-spacing: -0.03em;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid #8aa79b;
+      padding-left: 1.2rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-weight: 450;
+    }
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1.1rem;
+      color: #1f2e2b;
+    }
+    .small-meta {
+      font-size: 0.9rem;
+      color: #4c645a;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* ----- header / nav ----- */
+    .site-header {
+      padding: 2rem 0 1rem;
+      border-bottom: 1px solid #d9d0c4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.9rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: #1f3a30;
+      border-right: 2px solid #b7aaa0;
+      padding-right: 1.2rem;
+    }
+    .logo span {
+      font-weight: 200;
+      font-style: italic;
+      color: #5f7b6b;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .nav-links a {
+      color: #2f4d3f;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.2rem;
+    }
+    .nav-links a:hover {
+      border-bottom-color: #2f4d3f;
+      text-decoration: none;
+    }
+
+    /* ----- hero (contact specific) ----- */
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .hero-text h1 {
+      font-size: 3.6rem;
+      line-height: 1.1;
+    }
+    .hero-text .sub {
+      font-size: 1.3rem;
+      color: #38574a;
+      border-left: 4px solid #b9aa99;
+      padding-left: 1.5rem;
+      margin: 1.2rem 0 1.8rem;
+      font-style: italic;
+    }
+    .hero-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.8rem;
+      margin-top: 1.2rem;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.9rem;
+      color: #2e4d3d;
+    }
+    .hero-highlights span {
+      background: #e9e1d7;
+      padding: 0.2rem 1.2rem;
+      border-radius: 30px;
+    }
+    .hero-image {
+      border-radius: 6px;
+      box-shadow: 0 12px 28px -8px rgba(30, 40, 30, 0.15);
+      background: #d9d0c4;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2f4d3f;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><rect width="100" height="100" fill="%23c3b9ae"/><circle cx="30" cy="40" r="18" fill="%233d6b58" opacity="0.3"/><circle cx="70" cy="60" r="22" fill="%233d6b58" opacity="0.2"/><path d="M20 70 L80 20 L90 30 L30 80 Z" fill="%234d7863" opacity="0.25"/></svg>');
+      background-size: cover;
+      background-blend-mode: overlay;
+      background-color: #b8aa9b;
+    }
+
+    /* ----- content grid (contact main + sidebar) ----- */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 3.5rem;
+      margin: 2.5rem 0;
+    }
+
+    /* contact form & info cards */
+    .contact-card {
+      background: #ffffffd6;
+      backdrop-filter: blur(2px);
+      padding: 2rem 2.2rem;
+      border-radius: 28px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.03);
+      margin-bottom: 2.5rem;
+      border: 1px solid #e3dad0;
+    }
+    .contact-card h3 {
+      font-size: 1.9rem;
+      margin-top: 0.2rem;
+    }
+    .contact-card p {
+      font-size: 1.05rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #2f4d3f;
+      margin-bottom: 0.3rem;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid #d5c9bc;
+      border-radius: 60px;
+      background: #faf8f5;
+      font-family: 'Georgia', serif;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+    .form-group textarea {
+      border-radius: 24px;
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #5f7b6b;
+      background: #ffffff;
+      box-shadow: 0 0 0 4px rgba(95, 123, 107, 0.1);
+    }
+    .btn-send {
+      background: #1e2f27;
+      border: none;
+      padding: 0.9rem 2.8rem;
+      border-radius: 60px;
+      font-weight: 600;
+      color: #ede8df;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.15s;
+      letter-spacing: 0.04em;
+      font-family: 'Arial', sans-serif;
+    }
+    .btn-send:hover {
+      background: #2f4d3f;
+    }
+    .contact-detail {
+      margin-top: 1.8rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd2c5;
+    }
+    .contact-detail strong {
+      color: #1a3028;
+    }
+
+    /* sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.8rem;
+    }
+    .sidebar-box {
+      background: #f0ebe4;
+      padding: 1.8rem 1.8rem 2rem;
+      border-radius: 18px;
+    }
+    .sidebar-box h3 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid #b9aa99;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+    .sidebar-box ul {
+      list-style: none;
+    }
+    .sidebar-box li {
+      margin-bottom: 0.8rem;
+      border-bottom: 1px dashed #ccbfb2;
+      padding-bottom: 0.6rem;
+    }
+    .sidebar-box li:last-child {
+      border: none;
+    }
+    .staff-card {
+      background: #e6ded4;
+      border-radius: 30px;
+      padding: 1.8rem;
+    }
+    .staff-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+    }
+    .staff-card .role {
+      font-family: 'Arial', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      color: #38574a;
+    }
+
+    /* FAQ & newsletter */
+    .faq-section {
+      margin: 3rem 0 2rem;
+      background: #f6f0e9;
+      padding: 2.2rem 2.5rem;
+      border-radius: 40px;
+    }
+    .faq-item {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #d4c9bd;
+    }
+    .faq-item strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #1a3028;
+    }
+    .faq-item p {
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      font-size: 1rem;
+    }
+
+    .newsletter {
+      background: #1e2f27;
+      color: #ede8df;
+      padding: 2.8rem 2.5rem;
+      border-radius: 60px;
+      margin: 2.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .newsletter h2 {
+      color: #e3dbd0;
+      border-left-color: #a3b9ab;
+      margin: 0;
+    }
+    .newsletter input {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 60px;
+      background: #3c5a4b;
+      color: white;
+      font-size: 1rem;
+      min-width: 220px;
+    }
+    .newsletter input::placeholder {
+      color: #c7d3c7;
+    }
+    .newsletter button {
+      background: #b6a696;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 60px;
+      font-weight: 600;
+      color: #1e2b22;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      transition: 0.15s;
+    }
+    .newsletter button:hover {
+      background: #d3c5b6;
+    }
+
+    /* footer */
+    .footer {
+      margin-top: 3.5rem;
+      padding: 2.5rem 0 1.5rem;
+      border-top: 1px solid #cfc2b5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      color: #2b4237;
+    }
+    .footer a {
+      color: #2b5e4a;
+    }
+
+    /* responsive */
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; }
+      .content-grid { grid-template-columns: 1fr; }
+      .newsletter { flex-direction: column; align-items: stretch; gap: 1rem; }
+      .site-header { flex-direction: column; align-items: start; gap: 1rem; }
+      h1 { font-size: 2.5rem; }
+    }
+    @media (max-width: 550px) {
+      .nav-links { flex-wrap: wrap; gap: 1rem; }
+    }
+    .card-tag {
+      background: #bacfc0;
+      color: #1c3229;
+      padding: 0.1rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .border-accent { border-left: 4px solid #8aa79b; padding-left: 1.2rem; }
+    .mt-4 { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- header -->
+    <header class="site-header">
+      <div class="logo">Zafora <span>Leaf Atelier</span></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" style="border-bottom-color:#2f4d3f;">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+      </div>
+    </header>
+
+    <!-- hero (contact) -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Let’s grow<br>together.</h1>
+        <div class="sub">Reach out for collaborations, speaking inquiries, or just to share your garden story.</div>
+        <p>We reply to every thoughtful message within 48 hours. For gardening questions, please check our <a href="#">FAQ</a> or <a href="#">resource library</a> first — we’ve curated answers to the most common queries.</p>
+        <div class="hero-highlights">
+          <span>✉️ response within 48h</span>
+          <span>🌱 100% human reply</span>
+          <span>📬 press & partnership</span>
+        </div>
+      </div>
+      <div class="hero-image" aria-label="contact garden abstract"></div>
+    </section>
+
+    <!-- content grid: contact form + sidebar -->
+    <div class="content-grid">
+      <main>
+        <!-- contact form -->
+        <div class="contact-card">
+          <h3>Send a message</h3>
+          <p>We’d love to hear from you. Whether it’s a question about soil, a speaking invitation, or a note about our articles — drop us a line.</p>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Helena V." required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="helena@garden.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Speaking inquiry / article feedback / ...">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what’s on your mind ..." required></textarea>
+            </div>
+            <button type="submit" class="btn-send">Send message →</button>
+          </form>
+          <div class="contact-detail">
+            <strong>📬 Direct email:</strong> <a href="mailto:hello@zaforaleaf.com">hello@zaforaleaf.com</a><br>
+            <strong>📞 Voice note:</strong> +1 (800) 555‑Grow (we return calls within 1 business day)
+          </div>
+        </div>
+
+        <!-- press & collaboration (extra) -->
+        <div style="background:#ede7df; border-radius:28px; padding:1.8rem 2rem; margin-top:1rem; border:1px solid #d9d0c4;">
+          <h3 style="margin-top:0;">📰 Press & collaboration</h3>
+          <p>For media kits, interview requests, or co‑creation projects, please contact our editorial director directly: <strong>aria@zaforaleaf.com</strong></p>
+          <div style="display:flex; gap:0.8rem; flex-wrap:wrap; margin-top:0.4rem;">
+            <span class="card-tag" style="background:#b9aa99;">speaking</span>
+            <span class="card-tag" style="background:#b9aa99;">workshops</span>
+            <span class="card-tag" style="background:#b9aa99;">partnerships</span>
+          </div>
+        </div>
+      </main>
+
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-box">
+          <h3>📍 Visit us (by appointment)</h3>
+          <p style="margin-bottom:0.3rem;">Zafora Leaf Atelier · Garden Studio</p>
+          <p style="margin-bottom:0.3rem; font-size:1rem;">42 Green Lane, Somerset, UK</p>
+          <p style="font-size:0.9rem; color:#3f5f4e;">Open Mon‑Fri · 10am – 4pm<br> (garden visits by prior arrangement)</p>
+        </div>
+        <div class="sidebar-box"><h3>Popular categories</h3><ul><li>🌱 Soil health</li><li>🌿 Perennial vegetables</li><li>💧 Water management</li><li>🐞 Beneficial insects</li><li>🧪 Composting science</li><li>🌾 Seed saving</li></ul></div>
+        <div class="staff-card">
+          <h4>💬 Meet the team</h4>
+          <div style="margin-top:1rem;"><strong>Mira K.</strong> <span class="role">Head of Soil</span><br><span style="font-size:0.9rem;">mira@zaforaleaf.com</span></div>
+          <div style="margin-top:0.8rem;"><strong>Jonas R.</strong> <span class="role">Perennial specialist</span><br><span style="font-size:0.9rem;">jonas@zaforaleaf.com</span></div>
+          <div style="margin-top:0.8rem;"><strong>Elena W.</strong> <span class="role">Editorial & events</span><br><span style="font-size:0.9rem;">elena@zaforaleaf.com</span></div>
+        </div>
+        <div style="background:#dad0c4; border-radius:30px; padding:1.8rem; margin-top:0.5rem;"><h3 style="margin-top:0;">🌱 Resource hub</h3><p>Downloadable planting charts, soil testing log, and seasonal checklists.</p><div style="background:#1e2f27; color:#e8e0d6; padding:0.5rem 1.2rem; border-radius:60px; display:inline-block; margin-top:0.4rem;">Explore library →</div></div>
+      </aside>
+    </div>
+
+    <!-- FAQ (contact specific) -->
+    <section class="faq-section">
+      <h2 style="border-left:none; padding-left:0;">Before you write — quick answers</h2>
+      <div class="faq-item"><strong>Do you offer garden consultations?</strong><p>Yes — we provide remote and on‑site consultations for home gardeners and small farms. Email us with your location and goals.</p></div>
+      <div class="faq-item"><strong>How do I submit a guest article?</strong><p>We welcome pitches from experienced growers. Please send a brief outline and your background to editorial@zaforaleaf.com.</p></div>
+      <div class="faq-item"><strong>Can I visit the demonstration garden?</strong><p>We host open days twice a year. Follow our newsletter for dates, or book a private tour via the contact form.</p></div>
+      <div class="faq-item"><strong>I have a question about an article — where to ask?</strong><p>Use the form above, or comment directly on the article page. We read every comment and often reply within 24 hours.</p></div>
+    </section>
+
+    <!-- newsletter -->
+    <div class="newsletter">
+      <h2 style="border-left:0;">📬 The Atelier letter</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+        <input type="email" placeholder="your email for weekly insights">
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div>© 2026 Zafora Leaf Atelier · content-first gardening</div>
+      <div><a href="#">Privacy</a> · <a href="#">Contact</a> · <a href="#">RSS</a></div>
+    </footer>
+
+  </div>
+</body>
+</html>
